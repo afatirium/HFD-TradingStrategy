@@ -90,25 +90,23 @@ for (selected_quarter in c("2021_Q1", "2021_Q3", "2021_Q4",
   data.group2["T09:31/T09:40",] <- NA 
   data.group2["T15:51/T16:00",] <- NA
   
-  # lets calculate EMA20 and EMA100 for all series
+  # lets calculate EMA20 and EMA80 for all series
   data.group2$AUD_EMA30 <- EMA(na.locf(data.group2$AUD), 30)
   data.group2$AUD_EMA70 <- EMA(na.locf(data.group2$AUD),70)
   data.group2$CAD_EMA40 <- EMA(na.locf(data.group2$CAD),40)
   data.group2$CAD_EMA70 <- EMA(na.locf(data.group2$CAD),70)
-  data.group2$XAG_EMA20 <- EMA(na.locf(data.group2$XAG),50)
-  data.group2$XAG_EMA100 <- EMA(na.locf(data.group2$XAG),80)
-  #data.group2$XAU_EMA30 <- EMA(na.locf(data.group2$XAU),55)
-  #data.group2$XAU_EMA60 <- EMA(na.locf(data.group2$XAU),80)
+  data.group2$XAG_EMA50 <- EMA(na.locf(data.group2$XAG),50)
+  data.group2$XAG_EMA80 <- EMA(na.locf(data.group2$XAG),80)
+
   
   # put missing value whenever the original price is missing
   data.group2$AUD_EMA30[is.na(data.group2$AUD)] <- NA
   data.group2$AUD_EMA70[is.na(data.group2$AUD)] <- NA
   data.group2$CAD_EMA40[is.na(data.group2$CAD)] <- NA
   data.group2$CAD_EMA70[is.na(data.group2$CAD)] <- NA
-  data.group2$XAG_EMA20[is.na(data.group2$XAG)] <- NA
-  data.group2$XAG_EMA100[is.na(data.group2$XAG)] <- NA
-  #data.group2$XAU_EMA30[is.na(data.group2$XAU)] <- NA
-  #data.group2$XAU_EMA60[is.na(data.group2$XAU)] <- NA
+  data.group2$XAG_EMA50[is.na(data.group2$XAG)] <- NA
+  data.group2$XAG_EMA80[is.na(data.group2$XAG)] <- NA
+
   
   # lets calculate the position for the MOMENTUM strategy
   # for each asset separately
@@ -124,8 +122,8 @@ for (selected_quarter in c("2021_Q1", "2021_Q3", "2021_Q4",
                                            lag.xts(data.group2$CAD_EMA70),
                                          1, -1)
   
-  data.group2$position.XAG.mom <- ifelse(lag.xts(data.group2$XAG_EMA20) >
-                                           lag.xts(data.group2$XAG_EMA100),
+  data.group2$position.XAG.mom <- ifelse(lag.xts(data.group2$XAG_EMA50) >
+                                           lag.xts(data.group2$XAG_EMA80),
                                          1, -1)
   
   #data.group2$position.XAU.mom <- ifelse(lag.xts(data.group2$XAU_EMA30) >

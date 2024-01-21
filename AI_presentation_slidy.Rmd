@@ -96,15 +96,13 @@ knitr::include_graphics("pnl_group1_2021_Q1.png")
 
 ```
 
--   **Profit and Loss Tracking**: The blue line tracks the gross PnL, which shows the profit or loss before transaction costs. The red line tracks the net PnL, which is the profit or loss after accounting for a transaction cost of \$10 per trade.
-
 -   **Quarterly Peaks and Troughs**: The highest peak in mid-March shows the point at which the strategy was most profitable before a subsequent decline. This could indicate a strong market movement that was successfully captured by the strategy before a reversal or increased market volatility.
 
 -   **End-of-Quarter Performance**: Both PnL lines decline towards the end of the quarter, with the net PnL (red line) showing a steeper decline. This suggests that while the strategy was still profitable, the profits were reduced by transaction costs and possibly other factors such as unfavorable market movements or slippage.
 
 ## PnL of results for **group 1** -- quarter 2021Q3
 
-```{r, echo = F, out.width ='100%'}
+```{r, echo = F, out.width ='80%'}
 knitr::include_graphics("pnl_group1_2021_Q3.png")
 
 ```
@@ -113,26 +111,20 @@ knitr::include_graphics("pnl_group1_2021_Q3.png")
 
 -   **Peaks and Troughs**: There are several peaks and troughs in both lines, suggesting that the strategy had periods of both gains and losses.
 
--   **Transaction Costs Impact**: The red line is consistently below the blue line, reflecting the impact of transaction costs on the strategy's profitability.
-
 -   **Recovery and Decline**: The last part of the quarter shows a sharp increase in gross PnL followed by a steep decline, which is mirrored in the net PnL though the decline brings the net PnL below zero, indicating that the strategy ended the quarter at a loss after costs.
 
 -   **End of Quarter**: The quarter ends with the gross PnL above zero, suggesting some level of profitability before costs, while the net PnL is negative, showing a loss after costs.
 
-In short, the trading strategy experienced a tumultuous quarter with volatile performance and ended with a gross profit that was overshadowed by a net loss when accounting for transaction costs.
-
 ## PnL of results for **group 1** -- quarter 2021Q4
 
-```{r, echo = F, out.width ='100%'}
+```{r, echo = F, out.width ='80%'}
 knitr::include_graphics("pnl_group1_2021_Q4.png")
 
 ```
 
--   **Overall Trend**: Both the gross PnL (blue line) and net PnL (red line) exhibit a generally upward trend throughout the quarter, indicating that the trading strategy was profitable over this period.
+-   **Overall Trend**: Both the gross PnL and net PnL exhibit a generally upward trend throughout the quarter, indicating that the trading strategy was profitable over this period.
 
 -   **PnL Growth**: Starting from October, the PnL steadily grows, with both gross and net figures showing an increase, suggesting that the strategy was consistently generating positive returns.
-
--   **Transaction Cost Impact**: The gap between the gross and net PnL lines represents the impact of transaction costs. While both lines trend upwards, the net PnL is consistently lower than the gross PnL, which is expected due to the cost of trades.
 
 -   **End-of-Quarter Performance**: The strategy's performance seems to peak towards the end of December, with the gross PnL reaching the highest point in the quarter. The net PnL also reaches a peak, although it is slightly lower due to transaction costs.
 
@@ -142,71 +134,61 @@ This quarter appears to have been particularly successful for the trading strate
 
 ## PnL of results for **group 1** -- quarter 2022Q2
 
-```{r, echo = F, out.width ='100%'}
+```{r, echo = F, out.width ='80%'}
 knitr::include_graphics("pnl_group1_2022_Q2.png")
 
 ```
 
 -   **Volatility**: There is considerable volatility throughout the quarter, with both profits and losses.
 
--   **Gross PnL (Blue Line)**: Shows a fluctuating performance with moments of profit that are later offset by losses, ending the quarter in negative territory.
+-   **Trend**: Both lines trend downwards towards the end of the quarter, suggesting that the strategy was less effective during this period, market conditions were not favorable for the EMA crossover strategy employed.
 
--   **Net PnL (Red Line)**: Indicates the strategy's performance after accounting for transaction costs. The net PnL follows the gross PnL but ends lower due to the costs, accentuating the losses towards the end of the quarter.
-
--   **Trend**: Both lines trend downwards towards the end of the quarter, suggesting that the strategy was less effective during this period, or market conditions were not favorable for the EMA crossover strategy employed.
-
-In summary, the trading strategy had a challenging quarter, with the net outcome reflecting a loss after accounting for transaction costs.
+The trading strategy had a challenging quarter, with the net outcome reflecting a loss after accounting for transaction costs.
 
 ## PnL of results for **group 1** -- quarter 2022Q4
 
-```{r, echo = F, out.width ='100%'}
+```{r, echo = F, out.width ='80%'}
 knitr::include_graphics("pnl_group1_2022_Q4.png")
 
 ```
 
--   **PnL Fluctuations**: Both the gross (blue line) and net (red line) PnL demonstrate significant swings throughout the quarter, indicating a high level of volatility in the strategy's performance.
-
--   **Transaction Costs Impact**: The net PnL is consistently below the gross PnL, reflecting the impact of transaction costs on the strategy's profitability.
+-   **PnL Fluctuations**: Both the gross and net PnL demonstrate significant swings throughout the quarter, indicating a high level of volatility in the strategy's performance.
 
 -   **Mid-Quarter Recovery**: After an initial dip into negative territory, both lines show a recovery, with the gross PnL reaching a peak around mid-quarter before declining again.
 
 -   **Quarter End Decline**: Towards the end of the quarter, both PnL lines trend downwards, with the net PnL showing a larger drop into negative territory, suggesting the strategy incurred losses that were exacerbated after accounting for transaction costs.
 
-In summary, the trading strategy had periods of profitability during the quarter but ultimately concluded with a downturn, resulting in a net loss as of the end of the quarter.
+The trading strategy had periods of profitability during the quarter but ultimately concluded with a downturn, resulting in a net loss as of the end of the quarter.
 
 ## PnL of results for **group 1** -- quarter 2023Q1
 
-```{r, echo = F, out.width ='100%'}
+```{r, echo = F, out.width ='80%'}
 knitr::include_graphics("pnl_group1_2023_Q1.png")
 
 ```
 
--   **Upward Trend**: Both the gross (blue line) and net (red line) PnL show an overall upward trend, indicating that the trading strategy was generally profitable during this period.
-
--   **Transaction Costs Impact**: The net PnL, while following the same general trend as the gross PnL, is consistently lower, which reflects the impact of transaction costs on the trading returns.
+-   **Upward Trend**: Both the gross and net PnL show an overall upward trend, indicating that the trading strategy was generally profitable during this period.
 
 -   **Steady Performance Growth**: The strategy's performance appears to improve steadily over the quarter, with some fluctuations, but the upward trajectory is maintained.
 
 -   **End-of-Quarter Performance**: The quarter concludes with both the gross and net PnL reaching their highest points, suggesting a strong finish for the trading strategy.
 
-In summary, the EMA55 and EMA80 crossover strategy applied to NQ and SP futures resulted in a profitable first quarter in 2023, despite the costs associated with trading.
+The EMA55 and EMA80 crossover strategy applied to NQ and SP futures resulted in a profitable first quarter in 2023, despite the costs associated with trading.
 
 ## PnL of results for **group 1** -- quarter 2023Q2
 
-```{r, echo = F, out.width ='100%'}
+```{r, echo = F, out.width ='80%'}
 knitr::include_graphics("pnl_group1_2023_Q2.png")
 
 ```
 
--   **Fluctuating Performance**: The graph shows significant swings in both gross (blue line) and net (red line) PnL, indicating a volatile performance throughout the quarter.
-
--   **Impact of Transaction Costs**: There is a clear gap between the gross and net PnL, demonstrating the effect of transaction costs on the strategy's profitability.
+-   **Fluctuating Performance**: The graph shows significant swings in both gross and net PnL, indicating a volatile performance throughout the quarter.
 
 -   **Mid-Quarter Volatility**: The strategy experiences substantial ups and downs in the middle of the quarter, with a notable peak followed by a sharp decline in both gross and net PnL.
 
 -   **Quarter Conclusion**: The quarter ends with a downward trend in both lines, although the gross PnL remains above zero, while the net PnL dips below, reflecting a period of losses, especially after accounting for transaction costs.
 
-In summary, the trading strategy had a challenging second quarter in 2023 with high volatility and an overall decline in profitability, particularly after transaction costs are considered.
+The trading strategy had a challenging second quarter in 2023 with high volatility and an overall decline in profitability, particularly after transaction costs are considered.
 
 ## Finally selected strategy for **group 2**
 
@@ -216,7 +198,7 @@ In summary, the trading strategy had a challenging second quarter in 2023 with h
 
 2. **CAD Strategy (EMA40 and EMA70)**: The CAD, often influenced by oil prices and North American economic indicators, requires a balance between responsiveness and long-term trend analysis. The EMA40 is chosen to react to market changes that are significant enough to consider, while still allowing the EMA70 to confirm the longer-term trend direction.
 
-3. **XAG Strategy (EMA50 and EMA80)**: Silver markets can be volatile with extended trends due to industrial demand and investment flows. The EMA50 offers a medium-term view that is less susceptible to rapid market changes, while the EMA80 provides a solid baseline for the market's overall direction, making it suitable for capturing longer and sustained trends in the XAG market.
+3. **XAG Strategy (EMA50 and EMA80)**: Silver markets is volatile with extended trends due to industrial demand and investment flows. The EMA50 offers a medium-term view that is less susceptible to rapid market changes, while the EMA80 provides a solid baseline for the market's overall direction, making it suitable for capturing longer and sustained trends in the XAG market.
 
 **Elimination of Gold (XAU) Futures:** 
 ***(WHY?)***
@@ -227,7 +209,7 @@ In summary, the trading strategy had a challenging second quarter in 2023 with h
 
 3. **Strategy Performance**: Historical performance data for the gold futures within the context of this strategy indicated underperformance compared to AUD, CAD, and XAG. This could be due to the less effective application of the selected EMA periods or the asset's characteristics not fitting well with the strategy's design.
 
-In conclusion, the tailored EMA settings for AUD, CAD, and XAG are designed to align with each market's specific characteristics and volatility profiles, aiming to optimize the strategy's effectiveness. The exclusion of XAU futures is a strategic choice to enhance overall performance, manage costs, and maintain the strategy's risk profile within acceptable parameters.
+The tailored EMA settings for AUD, CAD, and XAG are designed to align with each market's specific characteristics and volatility profiles, aiming to optimize the strategy's effectiveness. The exclusion of XAU futures is a strategic choice to enhance overall performance, manage costs, and maintain the strategy's risk profile within acceptable parameters.
 
 ```{=html}
 <!-- here you can include code chunk that applies the strategy for group 1 and calculates all the summary statistics
@@ -256,7 +238,7 @@ kable_styling(kable(quarter_stats.all.group2[, -2],
 # https://haozhu233.github.io/kableExtra/awesome_table_in_html.html
 ```
 
--   **2021_Q1 and 2021_Q4**: These quarters show substantial negative values across all risk-adjusted performance metrics and PnL. This indicates significant underperformance both before and after costs.
+-   **2021_Q1 and 2021_Q4**: These quarters show substantial negative values across all risk-adjusted performance metrics and PnL.
 
 -   **2021_Q3**: This quarter stands out with positive performance across all metrics and a substantial positive net PnL, suggesting the strategy worked well during this period.
 
@@ -266,14 +248,12 @@ kable_styling(kable(quarter_stats.all.group2[, -2],
 
 ## PnL of results for **group 2** -- quarter 2021Q1
 
-```{r, echo = F, out.width ='100%'}
+```{r, echo = F, out.width ='80%'}
 knitr::include_graphics("pnl_group2_2021_Q1.png")
 
 ```
 
 -   **Overall Downward Trend**: Both the gross and net PnL are trending downwards over the quarter, indicating that the strategy was generally unprofitable during this time.
-
--   **Impact of Transaction Costs**: The net PnL is consistently below the gross PnL, highlighting the impact of transaction costs. Given the negative values, these costs have exacerbated the losses.
 
 -   **Volatility**: The strategy's PnL displays volatility, with several peaks and troughs, but the general direction is negative, suggesting that any gains were temporary and ultimately overtaken by losses.
 
@@ -281,76 +261,67 @@ knitr::include_graphics("pnl_group2_2021_Q1.png")
 
 ## PnL of results for **group 2** -- quarter 2021Q3
 
-```{r, echo = F, out.width ='100%'}
+```{r, echo = F, out.width ='80%'}
 knitr::include_graphics("pnl_group2_2021_Q3.png")
 
 ```
 
--   **Transaction Costs Impact**: The difference between the gross and net PnL lines shows that transaction costs have a significant impact on the strategy's returns. The net PnL is always below the gross PnL, which is expected due to the transaction fees associated with each trade.
-
 -   **Quarterly Performance**: The strategy starts the quarter with positive momentum, experiences some volatility with ups and downs but maintains an overall positive trajectory. Both the gross and net PnL reach their highest points towards the end of the quarter, suggesting a period of strong performance.
 
--   **Volatility**: Despite the positive trend, there are periods of decline where the strategy gives back some of its gains, but these are followed by recoveries. This indicates some level of risk and the need for careful risk management.
+-   **Volatility**: Despite the positive trend, there are periods of decline where the strategy gives back some of its gains, but these are followed by recoveries. 
 
-In summary, the third quarter of 2021 was profitable for this trading strategy across the AUD, CAD, and XAG futures markets, even after accounting for transaction costs, although the impact of these costs is evident. The strategy's ability to end the quarter on an upward trend suggests effective management and the potential alignment of market conditions with the strategy's parameters during this period.
+The third quarter of 2021 was profitable for the trading strategy, even after accounting for transaction costs, although the impact of these costs is evident. The strategy's ability to end the quarter on an upward trend suggests effective management and the potential alignment of market conditions with the strategy's parameters during this period.
 
 ## PnL of results for **group 2** -- quarter 2021Q4
 
-```{r, echo = F, out.width ='100%'}
+```{r, echo = F, out.width ='80%'}
 knitr::include_graphics("pnl_group2_2021_Q4.png")
 
 ```
 
--   **Downward Trend**: Both the gross (blue line) and net (red line) PnL are trending downwards throughout the quarter, indicating that the trading strategy was consistently losing money over this period.
-
--   **Impact of Transaction Costs**: The net PnL shows a greater loss than the gross PnL, which suggests that transaction costs are exacerbating the losses experienced by the trading strategy.
+-   **Downward Trend**: Both the gross and net PnL are trending downwards throughout the quarter, indicating that the trading strategy was consistently losing money over this period.
 
 -   **Consistent Underperformance**: The lack of any sustained periods of recovery in the PnL lines implies that the strategy did not align well with market conditions during this quarter.
 
 ## PnL of results for **group 2** -- quarter 2022Q2
 
-```{r, echo = F, out.width ='100%'}
+```{r, echo = F, out.width ='80%'}
 knitr::include_graphics("pnl_group2_2022_Q2.png")
 
 ```
 
--   **Initial Losses and Recovery**: The quarter starts with significant losses, as indicated by both the gross (blue line) and net (red line) PnL dipping sharply. However, there is a recovery midway through the quarter, where the losses are recovered, and the PnL moves back above zero.
+-   **Initial Losses and Recovery**: The quarter starts with significant losses, as indicated by both the gross and net PnL dipping sharply. However, there is a recovery midway through the quarter, where the losses are recovered, and the PnL moves back above zero.
 
 -   **Volatility**: The strategy shows a volatile performance throughout the quarter, with several peaks and valleys, indicating periods of gains and losses.
-
--   **Impact of Transaction Costs**: The net PnL is consistently below the gross PnL, which is indicative of the transaction costs that are being subtracted from the gross profits. This gap between the two lines represents the cost of executing trades within the strategy.
 
 -   **End-of-Quarter Performance**: The quarter appears to end with a slight recovery in gross PnL, but the net PnL remains negative, suggesting that while the strategy had moments of profitability, the transaction costs ultimately resulted in a net loss.
 
 ## PnL of results for **group 2** -- quarter 2022Q4
 
-```{r, echo = F, out.width ='100%'}
+```{r, echo = F, out.width ='80%'}
 knitr::include_graphics("pnl_group2_2022_Q4.png")
 
 ```
 
 The strategy ends the quarter at a low point for both gross and net PnL, suggesting that the trading conditions, market volatility, or the strategy's parameters were not favorable during this period.
 
-In brief, the trading strategy for AUD, CAD, and XAG futures faced a challenging quarter, with a consistent downward trend leading to significant losses, particularly after accounting for transaction costs.
+In brief, the trading strategy faced a challenging quarter, with a consistent downward trend leading to significant losses, particularly after accounting for transaction costs.
 
 ## PnL of results for **group 2** -- quarter 2023Q1
 
-```{r, echo = F, out.width ='100%'}
+```{r, echo = F, out.width ='80%'}
 knitr::include_graphics("pnl_group2_2023_Q1.png")
 
 ```
 
--   **Mixed Performance**: The trading strategy exhibits a mixed performance throughout the quarter. The gross PnL (blue line) fluctuates and has several peaks and valleys, indicating periods of profit and loss.
-
--   **Net PnL Trend**: The net PnL follows the trend of the gross PnL but remains below it, reflecting the reduction in profits due to transaction costs. Towards the end of the quarter, the net PnL shows a significant decline, ending the quarter at a lower point than where it started.
+-   **Mixed Performance**: The trading strategy exhibits a mixed performance throughout the quarter. The gross PnL fluctuates and has several peaks and valleys, indicating periods of profit and loss.
 
 -   **End of Quarter**: Both lines end the quarter on a downward note, with the net PnL indicating that the strategy incurred losses after accounting for transaction costs.
 
-In summary, the first quarter of 2023 was volatile for the trading strategy across AUD, CAD, and XAG futures. Despite some profitable moments, the strategy ultimately closed the quarter with a net loss, particularly impacted by transaction costs.
 
 ## PnL of results for **group 2** -- quarter 2023Q2
 
-```{r, echo = F, out.width ='100%'}
+```{r, echo = F, out.width ='70%'}
 knitr::include_graphics("pnl_group2_2023_Q2.png")
 
 ```
@@ -358,8 +329,6 @@ knitr::include_graphics("pnl_group2_2023_Q2.png")
 -   **Mid-Quarter Fluctuations**: While there are some recoveries and upward movements mid-quarter, these are not sustained, and the trend continues downward.
 
 -   **End-of-Quarter Drop**: The quarter ends with a sharp decline in both gross and net PnL, with the net PnL experiencing a steeper fall, which highlights increased losses after accounting for transaction costs.
-
-In summary, the trading strategy for AUD, CAD, and XAG futures struggled during the second quarter of 2023, with an overall negative performance and substantial losses, especially after considering the costs associated with trading.
 
 # Summary and conclusions
 
@@ -385,7 +354,7 @@ In summary, the trading strategy for AUD, CAD, and XAG futures struggled during 
 
 -   **2021 Q3**: There was a remarkable turnaround, with both gross and net PnL showing an overall upward trend and the quarter closing on a profitable note despite the impact of transaction costs.
 
--   **2021 Q4**: The strategy suffered considerable losses, with both gross and net PnL in a consistent decline throughout the quarter, suggesting the strategy was not aligned with market conditions.
+-   **2021 Q4**: The strategy suffered considerable losses, with both gross and net PnL in a consistent decline throughout the quarter.
 
 -   **2022 Q2**: The quarter started with large losses, recovered midway but still showed significant volatility and ended with a net loss after transaction costs were considered.
 

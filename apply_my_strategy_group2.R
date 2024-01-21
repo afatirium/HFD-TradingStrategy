@@ -37,7 +37,7 @@ source("https://raw.githubusercontent.com/ptwojcik/HFD/master/function_positionV
 
 # setting the working directory
 
-setwd("D:/Documents/UW - MASTER/2Y1S/HFD/Final Project")
+setwd("D:/Documents/Github/HFD-TradingStrategy")
 getwd()
 
 # lets change the LC_TIME option to English

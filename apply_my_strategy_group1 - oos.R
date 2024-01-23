@@ -192,7 +192,7 @@ for (selected_quarter in c("2021_Q2", "2022_Q1", "2022_Q3",
   
   # collecting all statistics for a particular quarter
   
-  quarter_stats_oos <- data.frame(quarter = selected_quarter,
+  quarter_stats_oos1 <- data.frame(quarter = selected_quarter,
                                    assets.group = 1,
                                    grossSR,
                                    netSR,
@@ -206,11 +206,11 @@ for (selected_quarter in c("2021_Q2", "2022_Q1", "2022_Q3",
   )
   
   # collect summaries for all quarters
-  if(!exists("quarter_stats_oos.all.group1")) quarter_stats_oos.all.group1 <- quarter_stats_oos else
-    quarter_stats_oos.all.group1 <- rbind(quarter_stats_oos.all.group1, quarter_stats_oos)
+  if(!exists("quarter_stats_oos1.all.group1")) quarter_stats_oos1.all.group1 <- quarter_stats_oos1 else
+    quarter_stats_oos1.all.group1 <- rbind(quarter_stats_oos1.all.group1, quarter_stats_oos1)
   
   # create a plot of gros and net pnl and save it to png file
-  png(filename = paste0("pnl_group1_oos_", selected_quarter, ".png"),
+  png(filename = paste0("pnl_group1_", selected_quarter, ".png"),
       width = 1000, height = 600)
   
   print( # when plotting in a loop you have to use print()
@@ -230,13 +230,13 @@ for (selected_quarter in c("2021_Q2", "2022_Q1", "2022_Q3",
   
   # remove all unneeded objects for group 1
   rm(data.group1, my.endpoints, grossSR, netSR, av.daily.ntrades,
-     grossPnL, netPnL, stat, quarter_stats_oos, data.group1.daily)
+     grossPnL, netPnL, stat, quarter_stats_oos1, data.group1.daily)
   
   gc()
   
   
 } # end of the loop
 
-write.csv(quarter_stats_oos.all.group1, 
-          "quarter_stats_oos.all.group1.csv",
+write.csv(quarter_stats_oos1.all.group1, 
+          "quarter_stats_oos1.all.group1.csv",
           row.names = FALSE)

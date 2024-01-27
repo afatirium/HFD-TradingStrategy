@@ -116,6 +116,7 @@ for (selected_quarter in c("2021_Q1", "2021_Q3", "2021_Q4",
   # if fast MA(t-1) > slow MA(t-1) => pos(t) = 1 [long]
   # if fast MA(t-1) <= slow MA(t-1) => pos(t) = -1 [short]
   #  caution! this strategy is always in the market !
+  
   data.group1$positionNQ.mom <- ifelse(lag.xts(data.group1$NQ_EMA55) >
                                          lag.xts(data.group1$NQ_EMA80),
                                        1, -1)

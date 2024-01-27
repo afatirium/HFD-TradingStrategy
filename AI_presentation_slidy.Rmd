@@ -7,12 +7,11 @@ output: slidy_presentation
 fontsize: 12pt
 ---
 
-```{=html}
 <!-- 
 You can find more options here:
 http://rmarkdown.rstudio.com/slidy_presentation_format.html
 -->
-```
+
 ## Approaches undertaken
 
 **Group 1:**
@@ -52,10 +51,9 @@ The choice of EMA55 and EMA80 is strategic. The 55-period EMA is often used by t
 
 In conclusion, the strategic application of EMA55 and EMA80 in trading the SP and NQ futures is designed to capitalize on sustained trends, reduce the impact of market volatility, and enhance the robustness of trade signals for improved decision-making in both bullish and bearish scenarios.
 
-```{=html}
 <!-- here you can include code chunk that applies the strategy for group 1 and calculates all the summary statistics
 -->
-```
+
 ```{r, echo = F, warning = F, message = F}
 # here you can refer to the R codes that apply the strategy
 # for asset group 1 to all quarters (in a loop)

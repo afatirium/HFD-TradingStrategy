@@ -242,3 +242,4 @@ for (selected_quarter in c("2021_Q1", "2021_Q2","2021_Q3", "2021_Q4",
 write.csv(quarter_stats.all.group1, 
           "quarter_stats.all.group1.csv",
           row.names = FALSE)
+

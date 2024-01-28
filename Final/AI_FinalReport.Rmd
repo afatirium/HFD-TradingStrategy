@@ -66,30 +66,29 @@ kable(quarter_stats.all.group1[, -c(2,5)],
 
 ```
 
+-   **2021_Q1**: The strategy started off strongly with positive gross and net Sharpe Ratios (SR) and Calmar Ratios (CR), indicating good risk-adjusted returns and a robust quarter with significant profits.
 
-- **2021_Q1**: The strategy started off strongly with positive gross and net Sharpe Ratios (SR) and Calmar Ratios (CR), indicating good risk-adjusted returns and a robust quarter with significant profits.
+-   **2021_Q2**: This quarter marked a downturn, with negative SR and CR values, reflecting poor risk-adjusted performance and substantial losses in both gross and net PnL.
 
-- **2021_Q2**: This quarter marked a downturn, with negative SR and CR values, reflecting poor risk-adjusted performance and substantial losses in both gross and net PnL.
+-   **2021_Q3**: Performance was mixed with a slight positive gross SR but negative net SR and CR, resulting in a minimal gross profit and a net loss.
 
-- **2021_Q3**: Performance was mixed with a slight positive gross SR but negative net SR and CR, resulting in a minimal gross profit and a net loss.
+-   **2021_Q4**: The strategy rebounded strongly with high positive SR and CR values and considerable profits, suggesting a highly successful quarter.
 
-- **2021_Q4**: The strategy rebounded strongly with high positive SR and CR values and considerable profits, suggesting a highly successful quarter.
+-   **2022_Q1**: Continued good performance from the previous quarter with positive SR and CR values and healthy profits.
 
-- **2022_Q1**: Continued good performance from the previous quarter with positive SR and CR values and healthy profits.
+-   **2022_Q2**: Performance dipped, indicated by negative SR and CR values, and the strategy incurred losses.
 
-- **2022_Q2**: Performance dipped, indicated by negative SR and CR values, and the strategy incurred losses.
+-   **2022_Q3**: The negative trend continued with slight losses, although less severe than the previous quarter.
 
-- **2022_Q3**: The negative trend continued with slight losses, although less severe than the previous quarter.
+-   **2022_Q4**: Very minor gross losses and more significant net losses were observed, with negative SR and CR values.
 
-- **2022_Q4**: Very minor gross losses and more significant net losses were observed, with negative SR and CR values.
+-   **2023_Q1**: A strong recovery with high SR and CR values and substantial profits.
 
-- **2023_Q1**: A strong recovery with high SR and CR values and substantial profits.
+-   **2023_Q2**: A positive quarter, albeit with lower SR and CR values compared to Q1, but still profitable.
 
-- **2023_Q2**: A positive quarter, albeit with lower SR and CR values compared to Q1, but still profitable.
+-   **2023_Q3**: A challenging quarter with negative SR and CR values and significant losses in both gross and net PnL.
 
-- **2023_Q3**: A challenging quarter with negative SR and CR values and significant losses in both gross and net PnL.
-
-- **2023_Q4**: An improvement with positive SR and CR values and profits, although at lower levels than earlier profitable quarters.
+-   **2023_Q4**: An improvement with positive SR and CR values and profits, although at lower levels than earlier profitable quarters.
 
 The strategy's performance shows some volatility from quarter to quarter, with periods of significant profits interspersed with quarters of losses. Risk-adjusted return metrics like SR and CR have fluctuated correspondingly, suggesting varying levels of market risk and strategy effectiveness. The strategy has demonstrated the ability to recover after downturns, but it has also faced consistent challenges, particularly in managing costs, as evidenced by the differences between gross and net returns. The sum of stats is 154.52.
 
@@ -263,9 +262,6 @@ knitr::include_graphics("pnl_group1_2023_Q4.png")
 
 **Quarter End**: The quarter ends with a decline in both gross and net PnL, although the gross PnL remains positive, indicating some level of profitability before costs are taken into account. However, the net PnL is notably lower, finishing closer to the zero line, which reflects the cost impact on the strategy's returns.
 
-
-
-
 # Finally selected strategy for **group 2**
 
 **WHY Specific EMA Settings for Each Asset:**
@@ -308,17 +304,15 @@ kable(quarter_stats.all.group2[, -c(2,5)],
 
 ```
 
+-   The strategy had varying performance with predominantly negative Sharpe Ratios (SR) and Calmar Ratios (CR), suggesting risk-adjusted returns were often below acceptable thresholds.
 
-- The strategy had varying performance with predominantly negative Sharpe Ratios (SR) and Calmar Ratios (CR), suggesting risk-adjusted returns were often below acceptable thresholds.
+-   **2021_Q3** was the standout quarter, showing positive gross and net SR and CR values and a significant profit, indicating a successful period for the strategy.
 
-- **2021_Q3** was the standout quarter, showing positive gross and net SR and CR values and a significant profit, indicating a successful period for the strategy.
+-   Most other quarters, including **2021_Q1**, **2021_Q2**, **2021_Q4**, **2022_Q1**, **2022_Q2**, **2022_Q4**, **2023_Q2**, **2023_Q3**, and **2023_Q4** experienced losses, as indicated by negative SR and CR values.
 
-- Most other quarters, including **2021_Q1**, **2021_Q2**, **2021_Q4**, **2022_Q1**, **2022_Q2**, **2022_Q4**, **2023_Q2**, **2023_Q3**, and **2023_Q4** experienced losses, as indicated by negative SR and CR values.
+-   **2022_Q3** and **2023_Q1** showed mixed results with slight profits or minimal losses, suggesting these periods were relatively better than other loss-making quarters.
 
-- **2022_Q3** and **2023_Q1** showed mixed results with slight profits or minimal losses, suggesting these periods were relatively better than other loss-making quarters.
-
-- Overall, **2021_Q3** was the most profitable, and **2021_Q4** and **2023_Q2** were the most challenging for Group 2. The sum of stats is -69.17.
-
+-   Overall, **2021_Q3** was the most profitable, and **2021_Q4** and **2023_Q2** were the most challenging for Group 2. The sum of stats is -69.17.
 
 ## PnL of results for **group 2** -- quarter 2021Q1
 
@@ -347,7 +341,6 @@ knitr::include_graphics("pnl_group2_2021_Q2.png")
 **Cost Impact**: The net PnL, after accounting for costs, is consistently below the gross PnL, highlighting the impact of trading expenses.
 
 **Ending Lower**: The quarter concludes with both gross and net PnL at their lowest points, suggesting that the strategy underperformed throughout this period.
-
 
 ## PnL of results for **group 2** -- quarter 2021Q3
 
@@ -390,7 +383,6 @@ knitr::include_graphics("pnl_group2_2022_Q1.png")
 
 **Quarter End**: The quarter ends with a steep decline in both gross and net PnL, concluding the period with the strategy in a loss-making position.
 
-
 ## PnL of results for **group 2** -- quarter 2022Q2
 
 ```{r, echo = F, out.width ='100%'}
@@ -418,7 +410,6 @@ knitr::include_graphics("pnl_group2_2022_Q3.png")
 **Persistent Net Losses**: The net PnL remains below zero for the entirety of the quarter, suggesting that after costs, the strategy is consistently unprofitable.
 
 **End of Quarter**: The quarter concludes with the gross PnL in positive territory, but the net PnL still shows a loss, indicating that while the strategy had periods of gross profitability, costs significantly affected its overall net performance.
-
 
 ## PnL of results for **group 2** -- quarter 2022Q4
 
@@ -453,7 +444,6 @@ knitr::include_graphics("pnl_group2_2023_Q2.png")
 
 **End-of-Quarter Drop**: The quarter ends with a sharp decline in both gross and net PnL, with the net PnL experiencing a steeper fall, which highlights increased losses after accounting for transaction costs.
 
-
 ## PnL of results for **group 2** -- quarter 2023Q3
 
 ```{r, echo = F, out.width ='80%'}
@@ -482,25 +472,29 @@ knitr::include_graphics("pnl_group2_2023_Q4.png")
 
 # Summary and conclusions
 
-## Group 1:
+## Summary and conclusions - Group 1:
 
+-   The strategy had varying performance with both strong and weak quarters.
 
-- The strategy had varying performance with both strong and weak quarters.
+-   The best performing quarters, based on Sharpe and Calmar Ratios and net profits, were **2021_Q1**, **2021_Q4**, and **2023_Q1**. These quarters showed robust risk-adjusted returns and significant profitability.
 
-- The best performing quarters, based on Sharpe and Calmar Ratios and net profits, were **2021_Q1**, **2021_Q4**, and **2023_Q1**. These quarters showed robust risk-adjusted returns and significant profitability.
+-   The most challenging quarters were **2021_Q2**, **2022_Q2**, and **2023_Q3**, where the strategy faced substantial losses and negative risk-adjusted performance metrics.
 
-- The most challenging quarters were **2021_Q2**, **2022_Q2**, and **2023_Q3**, where the strategy faced substantial losses and negative risk-adjusted performance metrics.
+-   Overall, **2021_Q4** and **2023_Q1** stand out as the strongest periods for the strategy, with the highest gross and net PnL, as well as Sharpe and Calmar Ratios.
 
-- Overall, **2021_Q4** and **2023_Q1** stand out as the strongest periods for the strategy, with the highest gross and net PnL, as well as Sharpe and Calmar Ratios.
+## Summary and conclusions - Group 2:
 
-## Group 2:
+-   Group 2's strategy often incurred losses, indicated by the negative gross and net SR and CR values across multiple quarters.
 
-- Group 2's strategy often incurred losses, indicated by the negative gross and net SR and CR values across multiple quarters.
+-   Costs appear to have a significant impact, with net PnL being more negative than gross PnL due to trading expenses.
 
-- Costs appear to have a significant impact, with net PnL being more negative than gross PnL due to trading expenses.
-
-- There's a lack of consistent profitability, with only one quarter (**2021_Q3**) showing strong performance.
+-   There's a lack of consistent profitability, with only one quarter (**2021_Q3**) showing strong performance.
 
 **Overall Summary**:
 
+| quarter | assets.group | grossSR | netSR | grossCR | netCR | av.daily.ntrades | grossPnL |  netPnL  | stat  |
+|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+| 2021_Q4 |      1       |  4.69   | 4.06  |  31.38  | 21.98 |      13.091      | 68,387.8 | 59,770.2 | 89.91 |
+| 2021_Q3 |      2       |  2.99   | 1.57  |  10.2   | 4.68  |      20.89       | 24,950.2 | 13,418.7 | 12.16 |
 
+When comparing these two specific quarters, which is the best for each group, **Group 1 in Q4 2021 outperformed Group 2 in Q3 2021** across all metrics - Sharpe Ratios, Calmar Ratios, and Profit and Loss figures. The higher 'stat' value for Group 1 suggests a better overall performance measure for this quarter

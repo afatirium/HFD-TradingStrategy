@@ -6,7 +6,6 @@ date: "Academic year 2023/2024"
 output: 
   word_document:
     df_print: kable
-always_allow_html: true
 fontsize: 14pt
 ---
 
@@ -29,7 +28,7 @@ The trading strategy for the Australian Dollar (AUD), Canadian Dollar (CAD), and
 
     -   The silver futures trading strategy uses a 50-period EMA and an 80-period EMA. The transaction cost is \$7, and the point value is \$5,000. To cover the cost of a round-trip trade, the XAG price must move at least 0.0014 points (\$7/\$5,000).
 
-## Finally selected strategy for **group 1**
+# Finally selected strategy for **group 1**
 
 The use of EMA55 and EMA80 suggests that a trade is initiated when the shorter EMA (55) crosses the longer EMA (80). If EMA55 crosses above EMA80, it might signal a buy, and if it crosses below, it might signal a sell.
 
@@ -59,18 +58,12 @@ source("apply_my_strategy_group1.R")
 ## Summary of results for **group 1**
 
 ```{r, echo = F}
-
 names(quarter_stats.all.group1)[5] <- "av.ntrades"
-column_spec(
-kable_styling(kable(quarter_stats.all.group1[, -2], 
-                    "html", 
+kable(quarter_stats.all.group1[, -c(2,5)], 
+                    "markdown", 
                     digits = 2,
-                    align = "r"),
-             font_size = 20),
-1:7, width = "30em")
+                    align = "r")
 
-# more options here:
-# https://haozhu233.github.io/kableExtra/awesome_table_in_html.html
 ```
 
 **2021_Q1:** High positive Sharpe ratios and Calmar ratios indicate a very profitable quarter with high returns and acceptable risk.
@@ -267,7 +260,9 @@ knitr::include_graphics("pnl_group1_2023_Q4.png")
 
 -   **Quarter End**: The quarter ends with a decline in both gross and net PnL, although the gross PnL remains positive, indicating some level of profitability before costs are taken into account. However, the net PnL is notably lower, finishing closer to the zero line, which reflects the cost impact on the strategy's returns.
 
-## Finally selected strategy for **group 2**
+
+
+# Finally selected strategy for **group 2**
 
 **WHY Specific EMA Settings for Each Asset:**
 
@@ -302,16 +297,11 @@ source("apply_my_strategy_group2.R")
 
 ```{r, echo = F}
 names(quarter_stats.all.group2)[5] <- "av.ntrades"
-column_spec(
-kable_styling(kable(quarter_stats.all.group2[, -2], 
-                    "html", 
+kable(quarter_stats.all.group2[, -c(2,5)], 
+                    "markdown", 
                     digits = 2,
-                    align = "r"),
-             font_size = 20),
-1:7, width = "30em")
+                    align = "r")
 
-# more options here:
-# https://haozhu233.github.io/kableExtr a/awesome_table_in_html.html
 ```
 
 - **2021_Q1 and 2021_Q4**: These quarters show substantial negative values across all risk-adjusted performance metrics and PnL.
@@ -335,7 +325,7 @@ kable_styling(kable(quarter_stats.all.group2[, -2],
 
 ## PnL of results for **group 2** -- quarter 2021Q1
 
-```{r, echo = F, out.width ='80%'}
+```{r, echo = F, out.width ='100%'}
 knitr::include_graphics("pnl_group2_2021_Q1.png")
 
 ```
@@ -348,7 +338,7 @@ knitr::include_graphics("pnl_group2_2021_Q1.png")
 
 ## PnL of results for **group 2** -- quarter 2021Q2
 
-```{r, echo = F, out.width ='80%'}
+```{r, echo = F, out.width ='100%'}
 knitr::include_graphics("pnl_group2_2021_Q2.png")
 
 ```
@@ -364,7 +354,7 @@ knitr::include_graphics("pnl_group2_2021_Q2.png")
 
 ## PnL of results for **group 2** -- quarter 2021Q3
 
-```{r, echo = F, out.width ='80%'}
+```{r, echo = F, out.width ='100%'}
 knitr::include_graphics("pnl_group2_2021_Q3.png")
 
 ```
@@ -377,7 +367,7 @@ The third quarter of 2021 was profitable for the trading strategy, even after ac
 
 ## PnL of results for **group 2** -- quarter 2021Q4
 
-```{r, echo = F, out.width ='80%'}
+```{r, echo = F, out.width ='100%'}
 knitr::include_graphics("pnl_group2_2021_Q4.png")
 
 ```
@@ -388,21 +378,25 @@ knitr::include_graphics("pnl_group2_2021_Q4.png")
 
 ## PnL of results for **group 2** -- quarter 2022Q1
 
-```{r, echo = F, out.width ='80%'}
+```{r, echo = F, out.width ='100%'}
 knitr::include_graphics("pnl_group2_2022_Q1.png")
 
 ```
 
 - **Fluctuations**: There are multiple fluctuations in both gross and net PnL, suggesting a highly volatile trading period.
+
 - **Net Losses**: The net PnL (red line) remains below zero for the majority of the quarter, indicating that the strategy consistently incurred net losses after accounting for costs.
+
 - **Gross Performance**: The gross PnL (blue line) fluctuates around the zero line, with periods of both positive and negative performance, but ends the quarter on a downward note.
+
 - **Cost Impact**: The difference between the gross and net PnL lines illustrates the impact of costs on the trading strategy's returns, with costs significantly affecting net profitability.
+
 - **Quarter End**: The quarter ends with a steep decline in both gross and net PnL, concluding the period with the strategy in a loss-making position.
 
 
 ## PnL of results for **group 2** -- quarter 2022Q2
 
-```{r, echo = F, out.width ='80%'}
+```{r, echo = F, out.width ='100%'}
 knitr::include_graphics("pnl_group2_2022_Q2.png")
 
 ```
@@ -421,8 +415,11 @@ knitr::include_graphics("pnl_group2_2022_Q3.png")
 ```
 
 - **Volatility**: Both the gross (blue) and net (red) PnL demonstrate a volatile performance with several peaks and troughs.
+
 - **Partial Recoveries**: The strategy experiences some recoveries, as indicated by the upward swings in the gross PnL.
+
 - **Persistent Net Losses**: The net PnL remains below zero for the entirety of the quarter, suggesting that after costs, the strategy is consistently unprofitable.
+
 - **End of Quarter**: The quarter concludes with the gross PnL in positive territory, but the net PnL still shows a loss, indicating that while the strategy had periods of gross profitability, costs significantly affected its overall net performance.
 
 
@@ -468,7 +465,9 @@ knitr::include_graphics("pnl_group2_2023_Q3.png")
 ```
 
 - **Persistent Downtrend**: Both gross (blue) and net (red) PnL are on a persistent downward trend, indicating sustained losses over the quarter.
+
 - **Widening Gap**: The gap between the gross and net PnL widens as the quarter progresses, suggesting increasing costs or larger losses when accounting for trading expenses.
+
 - **Quarter Conclusion**: The strategy finishes the quarter with net PnL at its lowest, pointing to significant losses after costs.
 
 ## PnL of results for **group 2** -- quarter 2023Q4
@@ -479,7 +478,9 @@ knitr::include_graphics("pnl_group2_2023_Q4.png")
 ```
 
 - **Fluctuating Performance**: There are numerous ups and downs in both gross and net PnL, showing a fluctuating performance throughout the quarter.
+
 - **Gross Profits and Net Losses**: The gross PnL (blue) occasionally peaks above zero, indicating some profitable moments before costs. However, the net PnL (red) is consistently below zero, suggesting that the strategy is not profitable after accounting for trading costs.
+
 - **End of Quarter Trend**: The quarter ends with the net PnL at a significant low, emphasizing the impact of costs on the trading strategy's performance.
 
 # Summary and conclusions
